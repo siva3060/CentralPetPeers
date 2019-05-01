@@ -27,7 +27,10 @@ public class UserController {
 		
 	
 	}
-
+	public void newpets(){
+		System.out.PrintLn();
+	}
+:
 	//user registration
 	public void registerUser(String userName,String userPassword){
 
