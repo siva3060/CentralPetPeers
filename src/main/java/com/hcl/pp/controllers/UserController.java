@@ -20,12 +20,8 @@ public class UserController {
 		return  userService.login(id);
 		
 
-@RestController
-public class UserController {
-
-
-	@Autowired
-	UserService userService
+	
+	}
 
 	//user registration
 	public void registerUser(String userName,String userPassword){
@@ -33,5 +29,8 @@ public class UserController {
 			userService.registerTheUser(userName,userPassword);
 
 
+	}
+	public String  buyPet() {
+		return "string";
 	}
 }
