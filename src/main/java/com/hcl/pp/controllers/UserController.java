@@ -40,20 +40,11 @@ public class UserController {
 	}
 
 	
-	
+	//get pet details
+	public list<pets> getPetDetails(int petId){
 
-
-
-
-
-
-
-
-
-
-
-
-
+		return petRepository.findAllByPetId(petId);
+	}
 
 
 
