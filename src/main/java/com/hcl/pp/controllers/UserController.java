@@ -1,6 +1,5 @@
 package com.hcl.pp.controllers;
 
-<<<<<<< HEAD
 import javax.websocket.server.PathParam;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,14 +11,20 @@ import com.hcl.pp.services.UserServices;
 @RestController
 @RequestMapping("/user")
 public class UserController {
+
+
+
 	@Autowired
 	UserServices userService;
+
+	@Autowired
+	PerService petService;
+	
 	@GetMapping("/login")
 	public String login( int id) {
 		
 		return  userService.login(id);
 		
-
 	
 	}
 
@@ -33,4 +38,31 @@ public class UserController {
 	public String  buyPet() {
 		return "string";
 	}
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	//adding a pet to repository
+	public class addPet(Sting petName,int petId,int petAge){
+
+		petService.addThePet(petName,petId,petAge);
+
+	}
+
+
 }
