@@ -25,12 +25,14 @@ public class UserController {
 		
 		return  userService.login(id);
 		
-	
 	}
 
 
 	// Hiii my name is charan
 
+	public void newpets(){
+		System.out.PrintLn();
+	}
 	//user registration
 	public void registerUser(String userName,String userPassword){
 
