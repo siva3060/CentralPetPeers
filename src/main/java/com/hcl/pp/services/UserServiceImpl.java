@@ -8,4 +8,14 @@ public class UserServiceImpl implements UserServices{
 		return "sucess";
 	}
 
+
+	@Autowired
+	UserRepository userRepository;
+
+
+
+	public void registerTheUser(String userName,String userPassword){
+
+		userRepository.save(userName,userPassword);
+	}
 }

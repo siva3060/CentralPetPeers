@@ -1,5 +1,6 @@
 package com.hcl.pp.controllers;
 
+<<<<<<< HEAD
 import javax.websocket.server.PathParam;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,5 +19,19 @@ public class UserController {
 		
 		return  userService.login(id);
 		
+=======
+@RestController
+public class UserController {
+
+
+	@Autowired
+	UserService userService
+
+	//user registration
+	public void registerUser(String userName,String userPassword){
+
+			userService.registerTheUser(userName,userPassword);
+
+>>>>>>> 7a8c2119e6d55b8ae4be7e7b2672ddd4e9f5be01
 	}
 }
